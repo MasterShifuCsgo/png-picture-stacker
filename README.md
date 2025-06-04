@@ -21,5 +21,3 @@ Stacks multiple PNG images vertically into a single tall image, preserving trans
    ```bash
    python stack_images.py
    ```
-
-Let me know if you also want a version that accepts a folder or dynamic image count.
