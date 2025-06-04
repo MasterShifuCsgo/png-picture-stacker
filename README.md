@@ -1,36 +1,25 @@
-🧩 PNG Vertical Stack Script
-This script stacks multiple .png images vertically into a single tall image, preserving transparency. It’s useful for combining layered graphics, game sprites, or vertically aligned visual elements.
+# PNG Vertical Stack
 
-🔧 What It Does
-Loads images named 1.png through 21.png
+Stacks multiple PNG images vertically into a single tall image, preserving transparency.
 
-Ensures all images have the same width (resizing if needed)
+## Features
 
-Stacks them from top (1.png) to bottom (21.png)
+- Loads `1.png` to `21.png`
+- Resizes to match width if needed
+- Stacks top-to-bottom
+- Saves as `stacked_vertical.png`
 
-Saves the final result as stacked_vertical.png
+## Usage
 
-▶️ Usage
-Place your 1.png to 21.png files in the same folder as the script.
+1. Place `1.png` to `21.png` in the script folder.
+2. Install Pillow:
 
-Install Pillow if you haven't:
+   ```bash
+   pip install pillow
+   ```
+3. run the script
+   ```bash
+   python stack_images.py
+   ```
 
-bash
-Copy
-Edit
-pip install pillow
-Run the script:
-
-bash
-Copy
-Edit
-python stack_images.py
-The result will be saved as stacked_vertical.png.
-
-📌 Notes
-All PNGs should ideally have the same width for best results.
-
-Transparency is preserved (RGBA mode).
-
-You can change the file range or modify the stacking order by adjusting the file_names list.
-
+Let me know if you also want a version that accepts a folder or dynamic image count.
